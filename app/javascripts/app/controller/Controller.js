@@ -1,0 +1,6 @@
+controller_slide = function(){
+	
+	
+	
+	
+}

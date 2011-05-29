@@ -1,0 +1,53 @@
+!!!Strict
+%html{   }
+	%head
+		%title Frebe Testing Framework.
+		%meta{'http-equiv'=>"Content-Type", :content=>"text/html; charset=utf-8"}/
+		%meta{'http-equiv'=>"Content-Language", :content=>"en-us"}/
+		%link{:href=>"/stylesheets/grid.css", :media=>"screen", :rel=>"stylesheet", :type=>"text/css"}/
+
+		%script{:src => "/javascripts/vendors.js", :type => 'text/javascript', :charset => 'utf-8'}
+
+		%link{:href=>"/test/jasmine-1.0.2/jasmine.css", :media=>"screen", :rel=>"stylesheet", :type=>"text/css"}/
+		%script{:src => "/test/jasmine-1.0.2/jasmine.js", :type => 'text/javascript', :charset => 'utf-8'}
+		%script{:src => "/test/jasmine-1.0.2/jasmine-html.js", :type => 'text/javascript', :charset => 'utf-8'}
+		%script{:src => "/test/jasmine-jquery/jasmine-jquery.js", :type => 'text/javascript', :charset => 'utf-8'}
+
+ 		
+		%script{:src => "/javascripts/specs.js", :type => 'text/javascript', :charset => 'utf-8'}
+		
+		
+		%script{:src => "/javascripts/app.js", :type => 'text/javascript', :charset => 'utf-8'}
+
+		%body
+			#headerWrapper
+			#header
+				#logo
+					%a{:href => "/"} frebbe
+				-if @login==true
+					#login
+						facebook
+						linkedIn
+						email
+						%input{:title => 'Tell us your name' } 
+						password
+						%input{:title => 'Tell us your name' }
+						%a{:href => "#" }
+			#container
+				#nav
+					%breadcrum
+						%h1
+							-@title
+					%links	
+						%a{:href => "/meetingRoom"} Meeting Room
+						%a{:href => "/stand"} My Business Stand
+				!= yield
+			#footerWrapper
+				#footer
+			#copywrite
+			
+			:javascript
+				$(function() {
+					jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
+					jasmine.getEnv().execute();
+				});
