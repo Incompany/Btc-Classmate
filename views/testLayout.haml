@@ -24,23 +24,8 @@
 			#header
 				#logo
 					%a{:href => "/"} frebbe
-				-if @login==true
-					#login
-						facebook
-						linkedIn
-						email
-						%input{:title => 'Tell us your name' } 
-						password
-						%input{:title => 'Tell us your name' }
-						%a{:href => "#" }
 			#container
 				#nav
-					%breadcrum
-						%h1
-							-@title
-					%links	
-						%a{:href => "/meetingRoom"} Meeting Room
-						%a{:href => "/stand"} My Business Stand
 				!= yield
 			#footerWrapper
 				#footer

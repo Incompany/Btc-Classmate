@@ -1,6 +1,4 @@
 $.sammy('body', function(){ 
- 
-	var Presentation = Model("presentation");
 	
 		this.bind('load_presentaciones', function(e,data) {
 			var context =this;
@@ -18,13 +16,14 @@ $.sammy('body', function(){
 				});
 		});
 
-		function handle_load_presentaciones_success(){
+		function handle_load_presentaciones_success(data){
 				var temp = JSON.parse(data);
 				var count = temp.length -1;
 				while (count>-1){
 					var t = temp[count];
 					var presentation = new Presentation(t);
 					presentation.save();
+					count -=1;
 				}
 				Presentation.trigger("data_loaded")
 		}

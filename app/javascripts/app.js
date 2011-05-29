@@ -1,3 +1,5 @@
+//Declared Models
+var Presentation = Model("presentation");
  
 
 function init() {

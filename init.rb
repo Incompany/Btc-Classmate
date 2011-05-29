@@ -41,11 +41,12 @@ end
 
 get '/slides' do
   parentId = params['parentId']
-  if parentId == root
+  if parentId == 'root'
     parentId = ""
   end
   presentations = Frebbe.findByParent parentId
-  return presentations
+  puts presentations
+  return presentations.to_json
 end 
  
 post '/slide' do

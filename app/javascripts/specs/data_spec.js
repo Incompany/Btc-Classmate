@@ -10,7 +10,6 @@ describe('Frebbe Ajax Data Tests', function() {
 			var testVal = false;
 
 			runs(function(){
-			 
 				Presentation.bind("data_loaded",function(){
 					testVal = true;
 				});
@@ -22,11 +21,9 @@ describe('Frebbe Ajax Data Tests', function() {
 			);
 
 			runs(function(){
-				
 				expect(Presentation.all().length).toBeGreaterThan(0);
 			});
-		
-	
+
 	});
 	 
 

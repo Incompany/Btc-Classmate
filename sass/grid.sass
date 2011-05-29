@@ -13,16 +13,13 @@ $ninesixty-columns: 16
 			+grid(12)
 
 #nav
-	text-align: right
-	a
-		font-size: 11px
-		color: $blue
-		margin-right: 8px
+
 
 #container
 	+grid-container
 	+clearfix
 	min-height : 500px
+	margin-top: 20px
 	#content
 		+grid-unit-base
 		+grid-width(16 ,-1px)
@@ -35,20 +32,17 @@ $ninesixty-columns: 16
 		+omega
 		+alpha
 		border-right : 1px solid $greyLighter
+		
 	#centerColumn
 		margin-top: 10px
 		+grid-unit-base
 		+grid-width(10 ,-1px)
 		border-right : 1px solid $greyLighter
+		
 	#rightColumn
 		margin-top: 10px
 		+grid-unit-base
 		+grid-width(3 ,-1px)
-	.divider
-		border-top : 1px solid $greyLighter
-		border-bottom : 1px solid $greyLighter
-		padding: 3px 3px 6px 3px
-		margin: 6px 0px 6px 0px
 
 #footerWrapper
 	background-color : $greyLighter
@@ -56,3 +50,10 @@ $ninesixty-columns: 16
 		+grid-container
 		+clearfix
 
+.divider
+	border-top : 1px solid $greyLighter
+	border-bottom : 1px solid $greyLighter
+	padding: 3px 3px 6px 3px
+	margin: 6px 0px 6px 0px
+	display: block
+	height: 1px
