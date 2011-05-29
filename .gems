@@ -1,0 +1,8 @@
+'sinatra'
+'haml'
+'compass-960-plugin'
+'json'
+'rspec'
+'rack-test'
+'sprockets'
+'mongo'
