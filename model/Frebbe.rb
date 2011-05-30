@@ -20,7 +20,6 @@ module Frebbe
     
     def insert(data)      
       parent = data[:parentId]
-      
       obj = @pres.insert(data)
       if parent != ""
         @pres.update( {"_id" => parent } , { "$addToSet" =>  {"children" => obj }})

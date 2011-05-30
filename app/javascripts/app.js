@@ -1,5 +1,7 @@
 //Declared Models
-var Presentation = Model("presentation");
+var Presentation = Model("presentation", function() {
+  this.unique_key = "_id";
+})
  
 
 function init() {

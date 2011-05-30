@@ -28,6 +28,7 @@ configure :development  do
 end 
 
 get '/test' do
+    puts system('ruby spec/frebbe_spec.rb')
     haml :index , :layout => :testLayout
 end
 
@@ -41,19 +42,31 @@ end
 
 get '/slides' do
   parentId = params['parentId']
+  
   if parentId == 'root'
     parentId = ""
+  else
+    parentId = BSON::ObjectId.from_string(parentId)
   end
+  
   presentations = Frebbe.findByParent parentId
-  puts presentations
   return presentations.to_json
 end 
  
 post '/slide' do
-  slide = params['slide']
-  return Frebbe.insert(JSON(slide))
+  slide = JSON(params['slide'])
+  result =Frebbe.insert(slide)
+  return slide.to_json
 end 
  
+post '/slide/:id' do
+  id = params['id']
+  id = BSON::ObjectId.from_string(id)
+  result =Frebbe.deleteRecursive(id)
+  return result
+end
+
+
 def render_file(filename)
   contents = File.read('views/'+filename+'.haml')
   Haml::Engine.new(contents).render

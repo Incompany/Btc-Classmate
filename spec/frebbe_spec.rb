@@ -90,6 +90,8 @@ require File.dirname(__FILE__) + '/spec_helper'
     presentations = @f.findByTag([Regexp.new("3"),Regexp.new("5")]).to_a
     presentations.length.should == 4
     
+    
+    
   end
   
   
