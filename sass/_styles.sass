@@ -1,21 +1,25 @@
-#logo
-	a
-		color: $blue
-		padding: 6px
-		display: block
-		font-size: $s12
-		text-decoration: none
-		
-.side
-	h1
-		color: $greyDarker
-		font-size: $s10
-	h2
-		color: $greyDarkest
-		font-size: $s10
-		
-	img
-		&.s
-			width: $s17
+#header
+	border-bottom: 1px solid $lightBlue
+	#logo
+	#intel
+		img
+			display: block
+			margin-top: 35px
+			padding-top: 25px
+			padding-bottom: 50px
+			padding-left: 50px
+			border-left: 1px solid $lightBlue
 			
-.center
+#nav
+	ul
+		li
+			a
+				display: block
+				padding: 5px
+				padding-top: 8px
+				padding-bottom: 8px
+				margin-left: 3px
+				@include background-image(linear-gradient($darkBlue, $lightBlue)) 
+				color: #fff
+				
+				

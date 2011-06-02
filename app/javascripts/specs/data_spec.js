@@ -4,6 +4,7 @@ describe('Frebbe Ajax Data Tests', function() {
 		app.test=true;
 	});
 
+
 	it('should load presentations from Ruby Test Spec' ,function (){
 		var testVal = false;
 		

@@ -1,21 +1,26 @@
 !!!Strict
 %html{   }
 	%head
-		%title Rodco S.A.
+		%title BTC - ClassMate
 		%meta{'http-equiv'=>"Content-Type", :content=>"text/html; charset=utf-8"}/
 		%meta{'http-equiv'=>"Content-Language", :content=>"en-us"}/
 		%link{:href=>"/stylesheets/grid.css", :media=>"screen", :rel=>"stylesheet", :type=>"text/css"}/
 		%script{:src => "/javascripts/vendors.js", :type => 'text/javascript', :charset => 'utf-8'}
-		%script{:src => "/javascripts/app.js", :type => 'text/javascript', :charset => 'utf-8'}
 
-		%body
-			#headerWrapper
-				#header
-					#logo
-						%a{:href => "/"} frebbe
-			#container
-				#nav
+	%body
+		#wrap
+			#nav
+				= render_file('components/menu')
+			#header
+				#logo
+					%img{:src=>"images/logoHeader.png"}
+				#intel
+					%img{:src=>"images/logoIntelHeader.png"}
+			#app
 				!= yield
-			#footerWrapper
-				#footer
+			#about
+			#info
+			#commitment
+			#future
+			#footer
 			#copywrite

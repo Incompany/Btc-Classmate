@@ -1,59 +1,40 @@
 @import base
  
-$ninesixty-columns: 16
+$ninesixty-columns: 12
 
-#headerWrapper
-	background-color : $greyDarker
+body
+	@include background-image(linear-gradient($darkBlue, $lightBlue)) 
+ 
+#wrap
+	+grid-system(12)
+	
+	#nav
+		+clearfix
+		ul#mainMenu
+			li
+				+grid-unit-base
+				+alpha
+				+omega
+				float: right
+				
 	#header
-		+grid-container
+		margin-top: 8px
 		+clearfix
-		#logo 
-			+grid(4)
-		#login
-			+grid(12)
-
-#nav
-
-
-#container
-	+grid-container
-	+clearfix
-	min-height : 500px
-	margin-top: 20px
-	#content
-		+grid-unit-base
-		+grid-width(16 ,-1px)
-		border-right : 1px solid $greyLighter
-
-	#leftColumn
-		margin-top: 10px
-		+grid-unit-base
-		+grid-width(3 ,-1px)
-		+omega
-		+alpha
-		border-right : 1px solid $greyLighter
-		
-	#centerColumn
-		margin-top: 10px
-		+grid-unit-base
-		+grid-width(10 ,-1px)
-		border-right : 1px solid $greyLighter
-		
-	#rightColumn
-		margin-top: 10px
-		+grid-unit-base
-		+grid-width(3 ,-1px)
-
-#footerWrapper
-	background-color : $greyLighter
+		#logo
+			+grid(7)
+		#intel
+			+grid(5)
+	#app
+		height: 600px
+	#about
+		#text
+			+grid(6)
+		#image
+			+grid(6)
+	#info
+	#commitment
+	#future
 	#footer
-		+grid-container
-		+clearfix
+	#copywrite
 
-.divider
-	border-top : 1px solid $greyLighter
-	border-bottom : 1px solid $greyLighter
-	padding: 3px 3px 6px 3px
-	margin: 6px 0px 6px 0px
-	display: block
-	height: 1px
+ 
