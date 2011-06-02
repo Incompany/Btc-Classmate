@@ -93,6 +93,32 @@ footer, header, hgroup, menu, nav, section {
   color: white;
 }
 
+/* line 27, /Users/roberto/Proyectos/Btc/svn/ruby/btc-minisitio/sass/_styles.sass */
+#app ul#appMenu li {
+  height: 103px;
+  display: block;
+  padding: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2f3f62), color-stop(100%, #2f9edc));
+  background-image: -webkit-linear-gradient(#2f3f62, #2f9edc);
+  background-image: -moz-linear-gradient(#2f3f62, #2f9edc);
+  background-image: -o-linear-gradient(#2f3f62, #2f9edc);
+  background-image: linear-gradient(#2f3f62, #2f9edc);
+  color: white;
+}
+/* line 36, /Users/roberto/Proyectos/Btc/svn/ruby/btc-minisitio/sass/_styles.sass */
+#app ul#appMenu #first a {
+  height: 50px;
+  width: 50px;
+  background: url("/images/sliderPestana1.png");
+}
+/* line 41, /Users/roberto/Proyectos/Btc/svn/ruby/btc-minisitio/sass/_styles.sass */
+#app #view {
+  background-color: white;
+  padding: 10px;
+}
+
 /* line 5, ../../sass/grid.sass */
 body {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2f3f62), color-stop(100%, #2f9edc));
@@ -107,6 +133,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 960px;
+  overflow: hidden;
+  *zoom: 1;
 }
 /* line 35, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
 #wrap .grid_1, #wrap .grid_2, #wrap .grid_3, #wrap .grid_4, #wrap .grid_5, #wrap .grid_6, #wrap .grid_7, #wrap .grid_8, #wrap .grid_9, #wrap .grid_10, #wrap .grid_11, #wrap .grid_12 {
@@ -352,26 +380,24 @@ body {
 #wrap .pull_11 {
   left: -880px;
 }
-/* line 11, ../../sass/grid.sass */
-#wrap #nav {
-  overflow: hidden;
-  *zoom: 1;
-}
 /* line 14, ../../sass/grid.sass */
 #wrap #nav ul#mainMenu li {
   display: inline;
   float: left;
   margin-left: 10px;
   margin-right: 10px;
+  float: right;
   margin-left: 0;
   margin-right: 0;
-  float: right;
 }
 /* line 20, ../../sass/grid.sass */
 #wrap #header {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 940px;
   margin-top: 8px;
-  overflow: hidden;
-  *zoom: 1;
 }
 /* line 23, ../../sass/grid.sass */
 #wrap #header #logo {
@@ -380,20 +406,65 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   width: 540px;
+  margin-left: 0;
 }
-/* line 25, ../../sass/grid.sass */
+/* line 26, ../../sass/grid.sass */
 #wrap #header #intel {
   display: inline;
   float: left;
   margin-left: 10px;
   margin-right: 10px;
   width: 380px;
+  margin-right: 0;
 }
-/* line 27, ../../sass/grid.sass */
+/* line 29, ../../sass/grid.sass */
 #wrap #app {
-  height: 600px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 940px;
+  margin-top: 20px;
 }
-/* line 30, ../../sass/grid.sass */
+/* line 32, ../../sass/grid.sass */
+#wrap #app ul#appMenu {
+  display: block;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 35, ../../sass/grid.sass */
+#wrap #app ul#appMenu li {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 140px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-right: 6px;
+}
+/* line 40, ../../sass/grid.sass */
+#wrap #app #view {
+  display: block;
+  height: 493px;
+}
+/* line 43, ../../sass/grid.sass */
+#wrap #app #view #sideBar {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 220px;
+}
+/* line 45, ../../sass/grid.sass */
+#wrap #app #view #main {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 700px;
+}
+/* line 48, ../../sass/grid.sass */
 #wrap #about #text {
   display: inline;
   float: left;
@@ -401,7 +472,7 @@ body {
   margin-right: 10px;
   width: 460px;
 }
-/* line 32, ../../sass/grid.sass */
+/* line 50, ../../sass/grid.sass */
 #wrap #about #image {
   display: inline;
   float: left;

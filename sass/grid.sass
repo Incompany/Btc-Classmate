@@ -7,25 +7,43 @@ body
  
 #wrap
 	+grid-system(12)
+	+clearfix
 	
 	#nav
-		+clearfix
 		ul#mainMenu
 			li
 				+grid-unit-base
+				float: right
 				+alpha
 				+omega
-				float: right
 				
 	#header
+		+grid(12)
 		margin-top: 8px
-		+clearfix
 		#logo
 			+grid(7)
+			+alpha
 		#intel
 			+grid(5)
+			+omega
 	#app
-		height: 600px
+		+grid(12)
+		margin-top: 20px
+		ul#appMenu
+			display: block
+			+clearfix
+			li
+				+grid(2)
+				+alpha
+				+omega
+				margin-right: 6px
+		#view
+			display: block
+			height: 493px
+			#sideBar
+				+grid(3)
+			#main
+				+grid(9)
 	#about
 		#text
 			+grid(6)
