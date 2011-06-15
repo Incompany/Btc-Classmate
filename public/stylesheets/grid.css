@@ -135,19 +135,32 @@ ul#info li p {
 }
 
 /* line 55, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
-#nuestroCompromiso ul#compromiso li {
+#nuestroCompromiso ul#compromiso > li {
   background-color: #2f3f62;
 }
-/* line 58, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
-#nuestroCompromiso ul#compromiso li ul#items li {
+/* line 57, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+#nuestroCompromiso ul#compromiso > li ul#items {
+  margin-left: 10px;
+  margin-top: 4px;
+}
+/* line 60, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+#nuestroCompromiso ul#compromiso > li ul#items li {
+  display: block;
+  height: 20px;
+  padding: 8px;
+  padding-left: 20px;
   color: white;
+  background: url("/images/compromiso/bulletItemsNC.png");
+  background-repeat: no-repeat;
+  background-position: -14px 7px;
+  font-size: 12px;
 }
 
-/* line 61, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+/* line 73, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
 #future {
   background: url("/images/futuro/back.jpg");
 }
-/* line 63, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+/* line 75, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
 #future img {
   margin-left: auto;
   margin-right: auto;
@@ -155,19 +168,19 @@ ul#info li p {
   margin-top: 40px;
 }
 
-/* line 69, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+/* line 81, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
 #footer {
   background-color: #2f3f62;
 }
-/* line 72, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+/* line 84, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
 #footer #inner #ft {
   border-bottom: 1px solid #2f9edc;
 }
-/* line 75, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+/* line 87, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
 #footer #inner #ft #links ul {
   margin-top: 85px;
 }
-/* line 78, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+/* line 90, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
 #footer #inner #ft #links ul li a {
   display: block;
   padding: 10px;
@@ -178,11 +191,11 @@ ul#info li p {
   border-left: 1px solid #2f9edc;
   font-size: 10px;
 }
-/* line 88, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+/* line 100, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
 #footer #inner #ft #links ul li a.selected {
   color: #3fa9f5;
 }
-/* line 90, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+/* line 102, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
 #footer #inner #ft #logo {
   display: inline;
   float: left;
@@ -191,7 +204,7 @@ ul#info li p {
   width: 140px;
   border-right: 1px solid #2f9edc;
 }
-/* line 93, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+/* line 105, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
 #footer #inner #ft #intel {
   display: inline;
   float: left;
@@ -200,7 +213,7 @@ ul#info li p {
   width: 140px;
 }
 
-/* line 97, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+/* line 109, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
 #copywrite #tm {
   color: #3fa9f5;
   font-size: 8px;
@@ -270,11 +283,65 @@ ul#info li p {
 }
 /* line 52, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
 #app .appView #sideBar h2 {
-  background-color: #2f3f62;
+  background: url("/images/slider/h2_header.jpg");
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  width: 217px;
   color: white;
   margin: 10px;
+  margin-right: 0px;
 }
-/* line 57, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
+/* line 61, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
+#app .appView #sideBar ul#videos {
+  overflow: hidden;
+  *zoom: 1;
+  display: block;
+  clear: both;
+  margin: 10px;
+  margin-right: 0px;
+}
+/* line 68, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
+#app .appView #sideBar ul#videos > li {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-left: 0;
+}
+/* line 72, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
+#app .appView #sideBar ul#videos > li h3 {
+  font-size: 10px;
+}
+/* line 76, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
+#app .appView #sideBar a.link {
+  clear: both;
+  display: block;
+  color: #2f3f62;
+  margin: 10px;
+}
+/* line 82, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
+#app .appView #sideBar ul#downloads {
+  margin: 10px;
+}
+/* line 84, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
+#app .appView #sideBar ul#downloads > li {
+  background-color: #efefef;
+  margin-bottom: 5px;
+  padding: 4px;
+  display: block;
+}
+/* line 89, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
+#app .appView #sideBar ul#downloads > li > a {
+  background: url("/images/slider/btnDownload.png");
+  background-repeat: no-repeat;
+  background-position: center right;
+  color: #666666;
+  display: block;
+  padding: 4px;
+  font-size: 11px;
+}
+/* line 102, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
 #app .appView #main img {
   margin-top: 10px;
 }
@@ -621,18 +688,21 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   width: 220px;
+  width: 240px;
   margin-left: 0;
+  margin-right: 0;
 }
-/* line 50, ../../sass/grid.sass */
+/* line 52, ../../sass/grid.sass */
 #wrap #app .appView #main {
   display: inline;
   float: left;
   margin-left: 10px;
   margin-right: 10px;
   width: 700px;
+  width: 660px;
   margin-right: 0;
 }
-/* line 53, ../../sass/grid.sass */
+/* line 56, ../../sass/grid.sass */
 #wrap #about {
   margin-top: 10px;
   display: inline;
@@ -642,13 +712,13 @@ body {
   width: 940px;
   height: 250px;
 }
-/* line 57, ../../sass/grid.sass */
+/* line 60, ../../sass/grid.sass */
 #wrap #about #back {
   overflow: hidden;
   *zoom: 1;
   height: 250px;
 }
-/* line 60, ../../sass/grid.sass */
+/* line 63, ../../sass/grid.sass */
 #wrap #about #back h2 {
   display: block;
   display: inline;
@@ -658,7 +728,7 @@ body {
   width: 460px;
   margin: 15px;
 }
-/* line 64, ../../sass/grid.sass */
+/* line 67, ../../sass/grid.sass */
 #wrap #about #back p {
   display: block;
   display: inline;
@@ -668,7 +738,7 @@ body {
   width: 460px;
   margin: 15px;
 }
-/* line 69, ../../sass/grid.sass */
+/* line 72, ../../sass/grid.sass */
 #wrap ul#info {
   display: inline;
   float: left;
@@ -677,7 +747,7 @@ body {
   width: 940px;
   margin-top: 10px;
 }
-/* line 73, ../../sass/grid.sass */
+/* line 76, ../../sass/grid.sass */
 #wrap ul#info li {
   display: inline;
   float: left;
@@ -686,15 +756,15 @@ body {
   width: 300px;
   height: 631px;
 }
-/* line 76, ../../sass/grid.sass */
+/* line 79, ../../sass/grid.sass */
 #wrap ul#info li.first {
   margin-left: 0;
 }
-/* line 78, ../../sass/grid.sass */
+/* line 81, ../../sass/grid.sass */
 #wrap ul#info li.last {
   margin-right: 0;
 }
-/* line 81, ../../sass/grid.sass */
+/* line 84, ../../sass/grid.sass */
 #wrap #nuestroCompromiso {
   margin-top: 10px;
   display: inline;
@@ -703,7 +773,7 @@ body {
   margin-right: 10px;
   width: 940px;
 }
-/* line 85, ../../sass/grid.sass */
+/* line 88, ../../sass/grid.sass */
 #wrap #nuestroCompromiso ul#compromiso li {
   height: 250px;
   display: inline;
@@ -712,16 +782,16 @@ body {
   margin-right: 10px;
   width: 220px;
 }
-/* line 88, ../../sass/grid.sass */
+/* line 91, ../../sass/grid.sass */
 #wrap #nuestroCompromiso ul#compromiso li.first {
   margin-left: 0;
 }
-/* line 90, ../../sass/grid.sass */
+/* line 93, ../../sass/grid.sass */
 #wrap #nuestroCompromiso ul#compromiso li.last {
   margin-right: 0;
 }
 
-/* line 93, ../../sass/grid.sass */
+/* line 96, ../../sass/grid.sass */
 #future {
   overflow: hidden;
   *zoom: 1;
@@ -729,11 +799,11 @@ body {
   height: 340px;
 }
 
-/* line 97, ../../sass/grid.sass */
+/* line 100, ../../sass/grid.sass */
 #footer {
   margin-top: 20px;
 }
-/* line 99, ../../sass/grid.sass */
+/* line 102, ../../sass/grid.sass */
 #footer #inner {
   margin-left: auto;
   margin-right: auto;
@@ -985,7 +1055,7 @@ body {
 #footer #inner .pull_11 {
   left: -880px;
 }
-/* line 102, ../../sass/grid.sass */
+/* line 105, ../../sass/grid.sass */
 #footer #inner #ft {
   display: inline;
   float: left;
@@ -995,7 +1065,7 @@ body {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 106, ../../sass/grid.sass */
+/* line 109, ../../sass/grid.sass */
 #footer #inner #ft #links {
   display: inline;
   float: left;
@@ -1004,7 +1074,7 @@ body {
   width: 620px;
   margin-left: 0;
 }
-/* line 110, ../../sass/grid.sass */
+/* line 113, ../../sass/grid.sass */
 #footer #inner #ft #links ul li {
   display: inline;
   float: left;
@@ -1013,7 +1083,7 @@ body {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 114, ../../sass/grid.sass */
+/* line 117, ../../sass/grid.sass */
 #footer #inner #ft #logo {
   display: inline;
   float: left;
@@ -1022,7 +1092,7 @@ body {
   width: 140px;
   margin-left: 0;
 }
-/* line 117, ../../sass/grid.sass */
+/* line 120, ../../sass/grid.sass */
 #footer #inner #ft #intel {
   display: inline;
   float: left;
@@ -1031,7 +1101,7 @@ body {
   width: 140px;
   margin-right: 0;
 }
-/* line 120, ../../sass/grid.sass */
+/* line 123, ../../sass/grid.sass */
 #footer #copywrite {
   display: inline;
   float: left;
@@ -1039,7 +1109,7 @@ body {
   margin-right: 10px;
   width: 940px;
 }
-/* line 122, ../../sass/grid.sass */
+/* line 125, ../../sass/grid.sass */
 #footer #copywrite #icons {
   display: inline;
   float: left;
@@ -1048,14 +1118,14 @@ body {
   width: 700px;
   margin-left: 0;
 }
-/* line 125, ../../sass/grid.sass */
+/* line 128, ../../sass/grid.sass */
 #footer #copywrite #icons img {
   display: inline;
   float: left;
   margin-left: 10px;
   margin-right: 10px;
 }
-/* line 127, ../../sass/grid.sass */
+/* line 130, ../../sass/grid.sass */
 #footer #copywrite #tm {
   display: inline;
   float: left;
