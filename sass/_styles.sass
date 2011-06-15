@@ -13,32 +13,88 @@
 #nav
 	ul
 		li
+			cursor: pointer
 			a
 				display: block
-				padding: 5px
+				padding: 10px
 				padding-top: 8px
 				padding-bottom: 8px
 				margin-left: 3px
-				@include background-image(linear-gradient($darkBlue, $lightBlue)) 
+				background: url('/images/nav/up.png') 
 				color: #fff
+			a:hover
+				background: url('/images/nav/over.jpg') 
+			a.selected
+				background: url('/images/nav/selected.jpg') 
+				color: $darkBlue
 				
-#app
-	ul#appMenu
-		li
-			height: 103px
-			display: block
-			padding: 5px
-			padding-top: 8px
-			padding-bottom: 8px
-			@include background-image(linear-gradient($darkBlue, $lightBlue)) 
+
+#about
+	background-color: $darkBlue
+	#back
+		background: url('/images/btc_classmate/back.png') no-repeat
+		h2
 			color: #fff
-		#first
-			a
-				display:block
-				height: 50px
-				width: 50px
-				background: url('/images/sliderPestana1.png')
-	#view
-		background-color: $white
-		padding: 10px
-		
+		p
+			color: $blue
+			
+			
+ul#info
+	li
+		background-color: $darkBlue
+		h2
+			color: #fff
+			margin: 10px
+			
+		p
+			color: $blue
+			margin: 10px
+			
+#nuestroCompromiso
+	ul#compromiso
+		li
+			background-color: $darkBlue
+			ul#items
+				li
+					color: #fff
+	
+#future
+	background: url('/images/futuro/back.jpg') 
+	img
+		margin-left: auto
+		margin-right: auto
+		text-align: center
+		margin-top: 40px
+
+#footer
+	background-color: $darkBlue
+	#inner
+		#ft
+			border-bottom: 1px solid $lightBlue
+			#links
+				ul
+					margin-top: 85px
+					li
+						a
+							display: block
+							padding: 10px
+							padding-top: 8px
+							padding-bottom: 8px
+							margin-left: 3px
+							color: #fff
+							border-left: 1px solid $lightBlue
+							font-size: 10px
+						a:hover
+						a.selected
+							color: $blue
+			#logo
+				+grid(2)
+				border-right: 1px solid $lightBlue
+			#intel
+				+grid(2)
+#copywrite
+	#icons
+	#tm
+		color: $blue
+		font-size: 8px
+		text-align: right

@@ -64,11 +64,11 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 1, /Users/roberto/Proyectos/Btc/svn/ruby/btc-minisitio/sass/_styles.sass */
+/* line 1, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
 #header {
   border-bottom: 1px solid #2f9edc;
 }
-/* line 5, /Users/roberto/Proyectos/Btc/svn/ruby/btc-minisitio/sass/_styles.sass */
+/* line 5, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
 #header #intel img {
   display: block;
   margin-top: 35px;
@@ -78,45 +78,205 @@ footer, header, hgroup, menu, nav, section {
   border-left: 1px solid #2f9edc;
 }
 
-/* line 16, /Users/roberto/Proyectos/Btc/svn/ruby/btc-minisitio/sass/_styles.sass */
+/* line 15, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+#nav ul li {
+  cursor: pointer;
+}
+/* line 17, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
 #nav ul li a {
   display: block;
-  padding: 5px;
+  padding: 10px;
   padding-top: 8px;
   padding-bottom: 8px;
   margin-left: 3px;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2f3f62), color-stop(100%, #2f9edc));
-  background-image: -webkit-linear-gradient(#2f3f62, #2f9edc);
-  background-image: -moz-linear-gradient(#2f3f62, #2f9edc);
-  background-image: -o-linear-gradient(#2f3f62, #2f9edc);
-  background-image: linear-gradient(#2f3f62, #2f9edc);
+  background: url("/images/nav/up.png");
+  color: white;
+}
+/* line 25, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+#nav ul li a:hover {
+  background: url("/images/nav/over.jpg");
+}
+/* line 27, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+#nav ul li a.selected {
+  background: url("/images/nav/selected.jpg");
+  color: #2f3f62;
+}
+
+/* line 32, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+#about {
+  background-color: #2f3f62;
+}
+/* line 34, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+#about #back {
+  background: url("/images/btc_classmate/back.png") no-repeat;
+}
+/* line 36, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+#about #back h2 {
+  color: white;
+}
+/* line 38, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+#about #back p {
+  color: #3fa9f5;
+}
+
+/* line 43, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+ul#info li {
+  background-color: #2f3f62;
+}
+/* line 45, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+ul#info li h2 {
+  color: white;
+  margin: 10px;
+}
+/* line 49, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+ul#info li p {
+  color: #3fa9f5;
+  margin: 10px;
+}
+
+/* line 55, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+#nuestroCompromiso ul#compromiso li {
+  background-color: #2f3f62;
+}
+/* line 58, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+#nuestroCompromiso ul#compromiso li ul#items li {
   color: white;
 }
 
-/* line 27, /Users/roberto/Proyectos/Btc/svn/ruby/btc-minisitio/sass/_styles.sass */
-#app ul#appMenu li {
-  height: 103px;
+/* line 61, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+#future {
+  background: url("/images/futuro/back.jpg");
+}
+/* line 63, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+#future img {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* line 69, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+#footer {
+  background-color: #2f3f62;
+}
+/* line 72, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+#footer #inner #ft {
+  border-bottom: 1px solid #2f9edc;
+}
+/* line 75, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+#footer #inner #ft #links ul {
+  margin-top: 85px;
+}
+/* line 78, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+#footer #inner #ft #links ul li a {
   display: block;
-  padding: 5px;
+  padding: 10px;
   padding-top: 8px;
   padding-bottom: 8px;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2f3f62), color-stop(100%, #2f9edc));
-  background-image: -webkit-linear-gradient(#2f3f62, #2f9edc);
-  background-image: -moz-linear-gradient(#2f3f62, #2f9edc);
-  background-image: -o-linear-gradient(#2f3f62, #2f9edc);
-  background-image: linear-gradient(#2f3f62, #2f9edc);
+  margin-left: 3px;
   color: white;
+  border-left: 1px solid #2f9edc;
+  font-size: 10px;
 }
-/* line 36, /Users/roberto/Proyectos/Btc/svn/ruby/btc-minisitio/sass/_styles.sass */
-#app ul#appMenu #first a {
-  height: 50px;
-  width: 50px;
-  background: url("/images/sliderPestana1.png");
+/* line 88, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+#footer #inner #ft #links ul li a.selected {
+  color: #3fa9f5;
 }
-/* line 41, /Users/roberto/Proyectos/Btc/svn/ruby/btc-minisitio/sass/_styles.sass */
-#app #view {
+/* line 90, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+#footer #inner #ft #logo {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 140px;
+  border-right: 1px solid #2f9edc;
+}
+/* line 93, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+#footer #inner #ft #intel {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 140px;
+}
+
+/* line 97, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_styles.sass */
+#copywrite #tm {
+  color: #3fa9f5;
+  font-size: 8px;
+  text-align: right;
+}
+
+/* line 3, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
+#app ul#appMenu li {
+  height: 105px;
+  padding: 5px;
+  padding-right: 4px;
+  padding-top: 8px;
+  padding-bottom: 0px;
+  cursor: pointer;
+}
+/* line 11, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
+#app ul#appMenu #first {
+  background: url("/images/slider/btn/btn1_slider.png") no-repeat;
+}
+/* line 14, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
+#app ul#appMenu #first:hover, #app ul#appMenu #first.selected {
+  background: url("/images/slider/btn/btn1Hover_slider.png") no-repeat;
+}
+/* line 17, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
+#app ul#appMenu #second {
+  background: url("/images/slider/btn/btn2_slider.png") no-repeat;
+}
+/* line 20, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
+#app ul#appMenu #second:hover, #app ul#appMenu #second.selected {
+  background: url("/images/slider/btn/btn2Hover_slider.png") no-repeat;
+}
+/* line 23, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
+#app ul#appMenu #third {
+  background: url("/images/slider/btn/btn3_slider.png") no-repeat;
+}
+/* line 26, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
+#app ul#appMenu #third:hover {
+  background: url("/images/slider/btn/btn3Hover_slider.png") no-repeat;
+}
+/* line 30, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
+#app ul#appMenu #fourth {
+  background: url("/images/slider/btn/btn4_slider.png") no-repeat;
+}
+/* line 33, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
+#app ul#appMenu #fourth:hover {
+  background: url("/images/slider/btn/btn4Hover_slider.png") no-repeat;
+}
+/* line 36, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
+#app ul#appMenu #fifth {
+  background: url("/images/slider/btn/btn5_slider.png") no-repeat;
+}
+/* line 39, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
+#app ul#appMenu #fifth:hover {
+  background: url("/images/slider/btn/btn5Hover_slider.png") no-repeat;
+}
+/* line 42, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
+#app ul#appMenu #sixth {
+  background: url("/images/slider/btn/btn6_slider.png") no-repeat;
+}
+/* line 45, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
+#app ul#appMenu #sixth:hover {
+  background: url("/images/slider/btn/btn6Hover_slider.png") no-repeat;
+}
+/* line 49, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
+#app .appView {
   background-color: white;
-  padding: 10px;
+}
+/* line 52, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
+#app .appView #sideBar h2 {
+  background-color: #2f3f62;
+  color: white;
+  margin: 10px;
+}
+/* line 57, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
+#app .appView #main img {
+  margin-top: 10px;
 }
 
 /* line 5, ../../sass/grid.sass */
@@ -425,14 +585,15 @@ body {
   margin-right: 10px;
   width: 940px;
   margin-top: 20px;
+  overflow: hidden;
 }
-/* line 32, ../../sass/grid.sass */
+/* line 33, ../../sass/grid.sass */
 #wrap #app ul#appMenu {
   display: block;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 35, ../../sass/grid.sass */
+/* line 36, ../../sass/grid.sass */
 #wrap #app ul#appMenu li {
   display: inline;
   float: left;
@@ -441,42 +602,465 @@ body {
   width: 140px;
   margin-left: 0;
   margin-right: 0;
-  margin-right: 6px;
+  margin-right: 7px;
 }
-/* line 40, ../../sass/grid.sass */
-#wrap #app #view {
+/* line 41, ../../sass/grid.sass */
+#wrap #app ul#appMenu li.last {
+  margin-right: 0px;
+  margin-left: 11px;
+}
+/* line 44, ../../sass/grid.sass */
+#wrap #app .appView {
   display: block;
   height: 493px;
 }
-/* line 43, ../../sass/grid.sass */
-#wrap #app #view #sideBar {
+/* line 47, ../../sass/grid.sass */
+#wrap #app .appView #sideBar {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 220px;
+  margin-left: 0;
+}
+/* line 50, ../../sass/grid.sass */
+#wrap #app .appView #main {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 700px;
+  margin-right: 0;
+}
+/* line 53, ../../sass/grid.sass */
+#wrap #about {
+  margin-top: 10px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 940px;
+  height: 250px;
+}
+/* line 57, ../../sass/grid.sass */
+#wrap #about #back {
+  overflow: hidden;
+  *zoom: 1;
+  height: 250px;
+}
+/* line 60, ../../sass/grid.sass */
+#wrap #about #back h2 {
+  display: block;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 460px;
+  margin: 15px;
+}
+/* line 64, ../../sass/grid.sass */
+#wrap #about #back p {
+  display: block;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 460px;
+  margin: 15px;
+}
+/* line 69, ../../sass/grid.sass */
+#wrap ul#info {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 940px;
+  margin-top: 10px;
+}
+/* line 73, ../../sass/grid.sass */
+#wrap ul#info li {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 300px;
+  height: 631px;
+}
+/* line 76, ../../sass/grid.sass */
+#wrap ul#info li.first {
+  margin-left: 0;
+}
+/* line 78, ../../sass/grid.sass */
+#wrap ul#info li.last {
+  margin-right: 0;
+}
+/* line 81, ../../sass/grid.sass */
+#wrap #nuestroCompromiso {
+  margin-top: 10px;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 940px;
+}
+/* line 85, ../../sass/grid.sass */
+#wrap #nuestroCompromiso ul#compromiso li {
+  height: 250px;
   display: inline;
   float: left;
   margin-left: 10px;
   margin-right: 10px;
   width: 220px;
 }
-/* line 45, ../../sass/grid.sass */
-#wrap #app #view #main {
+/* line 88, ../../sass/grid.sass */
+#wrap #nuestroCompromiso ul#compromiso li.first {
+  margin-left: 0;
+}
+/* line 90, ../../sass/grid.sass */
+#wrap #nuestroCompromiso ul#compromiso li.last {
+  margin-right: 0;
+}
+
+/* line 93, ../../sass/grid.sass */
+#future {
+  overflow: hidden;
+  *zoom: 1;
+  margin-top: 20px;
+  height: 340px;
+}
+
+/* line 97, ../../sass/grid.sass */
+#footer {
+  margin-top: 20px;
+}
+/* line 99, ../../sass/grid.sass */
+#footer #inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 35, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .grid_1, #footer #inner .grid_2, #footer #inner .grid_3, #footer #inner .grid_4, #footer #inner .grid_5, #footer #inner .grid_6, #footer #inner .grid_7, #footer #inner .grid_8, #footer #inner .grid_9, #footer #inner .grid_10, #footer #inner .grid_11, #footer #inner .grid_12 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* line 38, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .grid_1 {
+  width: 60px;
+}
+/* line 38, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .grid_2 {
+  width: 140px;
+}
+/* line 38, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .grid_3 {
+  width: 220px;
+}
+/* line 38, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .grid_4 {
+  width: 300px;
+}
+/* line 38, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .grid_5 {
+  width: 380px;
+}
+/* line 38, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .grid_6 {
+  width: 460px;
+}
+/* line 38, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .grid_7 {
+  width: 540px;
+}
+/* line 38, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .grid_8 {
+  width: 620px;
+}
+/* line 38, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .grid_9 {
+  width: 700px;
+}
+/* line 38, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .grid_10 {
+  width: 780px;
+}
+/* line 38, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .grid_11 {
+  width: 860px;
+}
+/* line 38, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .grid_12 {
+  width: 940px;
+}
+/* line 46, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .prefix_1 {
+  padding-left: 80px;
+}
+/* line 46, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .prefix_2 {
+  padding-left: 160px;
+}
+/* line 46, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .prefix_3 {
+  padding-left: 240px;
+}
+/* line 46, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .prefix_4 {
+  padding-left: 320px;
+}
+/* line 46, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .prefix_5 {
+  padding-left: 400px;
+}
+/* line 46, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .prefix_6 {
+  padding-left: 480px;
+}
+/* line 46, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .prefix_7 {
+  padding-left: 560px;
+}
+/* line 46, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .prefix_8 {
+  padding-left: 640px;
+}
+/* line 46, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .prefix_9 {
+  padding-left: 720px;
+}
+/* line 46, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .prefix_10 {
+  padding-left: 800px;
+}
+/* line 46, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .prefix_11 {
+  padding-left: 880px;
+}
+/* line 54, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .suffix_1 {
+  padding-right: 80px;
+}
+/* line 54, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .suffix_2 {
+  padding-right: 160px;
+}
+/* line 54, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .suffix_3 {
+  padding-right: 240px;
+}
+/* line 54, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .suffix_4 {
+  padding-right: 320px;
+}
+/* line 54, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .suffix_5 {
+  padding-right: 400px;
+}
+/* line 54, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .suffix_6 {
+  padding-right: 480px;
+}
+/* line 54, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .suffix_7 {
+  padding-right: 560px;
+}
+/* line 54, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .suffix_8 {
+  padding-right: 640px;
+}
+/* line 54, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .suffix_9 {
+  padding-right: 720px;
+}
+/* line 54, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .suffix_10 {
+  padding-right: 800px;
+}
+/* line 54, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .suffix_11 {
+  padding-right: 880px;
+}
+/* line 58, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .alpha {
+  margin-left: 0;
+}
+/* line 60, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .omega {
+  margin-right: 0;
+}
+/* line 81, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .push_1, #footer #inner .push_2, #footer #inner .push_3, #footer #inner .push_4, #footer #inner .push_5, #footer #inner .push_6, #footer #inner .push_7, #footer #inner .push_8, #footer #inner .push_9, #footer #inner .push_10, #footer #inner .push_11, #footer #inner .push_12,
+#footer #inner .pull_1, #footer #inner .pull_2, #footer #inner .pull_3, #footer #inner .pull_4, #footer #inner .pull_5, #footer #inner .pull_6, #footer #inner .pull_7, #footer #inner .pull_8, #footer #inner .pull_9, #footer #inner .pull_10, #footer #inner .pull_11, #footer #inner .pull_12 {
+  position: relative;
+}
+/* line 85, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .push_1 {
+  left: 80px;
+}
+/* line 87, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .pull_1 {
+  left: -80px;
+}
+/* line 85, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .push_2 {
+  left: 160px;
+}
+/* line 87, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .pull_2 {
+  left: -160px;
+}
+/* line 85, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .push_3 {
+  left: 240px;
+}
+/* line 87, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .pull_3 {
+  left: -240px;
+}
+/* line 85, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .push_4 {
+  left: 320px;
+}
+/* line 87, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .pull_4 {
+  left: -320px;
+}
+/* line 85, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .push_5 {
+  left: 400px;
+}
+/* line 87, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .pull_5 {
+  left: -400px;
+}
+/* line 85, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .push_6 {
+  left: 480px;
+}
+/* line 87, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .pull_6 {
+  left: -480px;
+}
+/* line 85, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .push_7 {
+  left: 560px;
+}
+/* line 87, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .pull_7 {
+  left: -560px;
+}
+/* line 85, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .push_8 {
+  left: 640px;
+}
+/* line 87, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .pull_8 {
+  left: -640px;
+}
+/* line 85, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .push_9 {
+  left: 720px;
+}
+/* line 87, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .pull_9 {
+  left: -720px;
+}
+/* line 85, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .push_10 {
+  left: 800px;
+}
+/* line 87, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .pull_10 {
+  left: -800px;
+}
+/* line 85, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .push_11 {
+  left: 880px;
+}
+/* line 87, /Library/Ruby/Gems/1.8/gems/compass-960-plugin-0.10.3/lib/../stylesheets/960/_grid.sass */
+#footer #inner .pull_11 {
+  left: -880px;
+}
+/* line 102, ../../sass/grid.sass */
+#footer #inner #ft {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 940px;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 106, ../../sass/grid.sass */
+#footer #inner #ft #links {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 620px;
+  margin-left: 0;
+}
+/* line 110, ../../sass/grid.sass */
+#footer #inner #ft #links ul li {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 114, ../../sass/grid.sass */
+#footer #inner #ft #logo {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 140px;
+  margin-left: 0;
+}
+/* line 117, ../../sass/grid.sass */
+#footer #inner #ft #intel {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 140px;
+  margin-right: 0;
+}
+/* line 120, ../../sass/grid.sass */
+#footer #copywrite {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 940px;
+}
+/* line 122, ../../sass/grid.sass */
+#footer #copywrite #icons {
   display: inline;
   float: left;
   margin-left: 10px;
   margin-right: 10px;
   width: 700px;
+  margin-left: 0;
 }
-/* line 48, ../../sass/grid.sass */
-#wrap #about #text {
+/* line 125, ../../sass/grid.sass */
+#footer #copywrite #icons img {
   display: inline;
   float: left;
   margin-left: 10px;
   margin-right: 10px;
-  width: 460px;
 }
-/* line 50, ../../sass/grid.sass */
-#wrap #about #image {
+/* line 127, ../../sass/grid.sass */
+#footer #copywrite #tm {
   display: inline;
   float: left;
   margin-left: 10px;
   margin-right: 10px;
-  width: 460px;
+  width: 220px;
+  margin-right: 0;
 }

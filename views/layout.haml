@@ -7,6 +7,56 @@
 		%link{:href=>"/stylesheets/grid.css", :media=>"screen", :rel=>"stylesheet", :type=>"text/css"}/
 		%script{:src => "/javascripts/vendors.js", :type => 'text/javascript', :charset => 'utf-8'}
 
+		:javascript
+		
+			function reset(){
+				$('.appView').hide();
+				$('#appMenu > li').removeClass('selected');
+			}
+		
+			$(document).ready(function() {
+				
+				$('#first').click(function(){
+					reset();
+					$('#view1').show();
+					$(this).addClass('selected');
+				});
+				
+				$('#second').click(function(){
+					reset();
+					$('#view2').show();
+					$(this).addClass('selected');
+				});
+				
+					$('#third').click(function(){
+						reset();
+						$('#view3').show();
+						$(this).addClass('selected');
+					});
+					
+						$('#fourth').click(function(){
+							reset();
+							$('#view4').show();
+							$(this).addClass('selected');
+						});
+						
+							$('#fifth').click(function(){
+								reset();
+								$('#view5').show();
+								$(this).addClass('selected');
+							});
+							
+								$('#sixth').click(function(){
+									reset();
+									$('#view6').show();
+									$(this).addClass('selected');
+								});
+								
+							
+				
+				$('#first').click();
+				
+			});
 	%body
 		#wrap
 			#nav
@@ -19,8 +69,47 @@
 			#app
 				!= yield
 			#about
-			#info
-			#commitment
-			#future
-			#footer
-			#copywrite
+				#back
+					%h2 ¿Qué es BTC Classmate?
+					%p Texto descriptivo sobre qué es BTC Classmate Texto descriptivo sobre qué es BTC Classmate Texto descriptivo sobre qué es BTC Classmate Texto descriptivo sobre qué es BTC Classmate Texto descriptivo sobre qué es BTC Classmate Texto descriptivo sobre qué es BTC Classmate Texto descriptivo sobre qué es BTC Classmate Texto descriptivo sobre qué es BTC Classmate Texto descriptivo sobre qué es BTC Classmate Texto descriptivo sobre qué es BTC Classmate Texto descriptivo sobre qué es BTC Classmate.
+			%ul#info
+				%li.first
+					%img{:src=>"images/btc_classmate/col1.jpg"}
+					%h2 titulo 1
+					%p Texto descriptivo preparando los alumnos para el futuro Texto descriptivo preparando los alumnos para el futuro Texto descriptivo preparando los alumnos para el futuro Texto  descriptivo preparando los alumnos parael futuro Texto descriptivo preparando los  alumnos para el futuro Texto descriptivo.
+					%h2 titulo 1
+					%p Texto descriptivo preparando los alumnos para el futuro Texto descriptivo preparando los alumnos para el futuro Texto descriptivo preparando los alumnos para el futuro Texto  descriptivo preparando los alumnos parael futuro Texto descriptivo preparando los  alumnos para el futuro Texto descriptivo.
+				%li
+					%img{:src=>"images/btc_classmate/col2.jpg"}
+				%li.last
+					%img{:src=>"images/btc_classmate/col3.jpg"}
+			#nuestroCompromiso
+				%img{:src=>"images/compromiso/header.png"}
+				%ul#compromiso
+					%li.first
+						%img{:src=>"images/compromiso/col1.jpg"}
+					%li
+						%img{:src=>"images/compromiso/col2.jpg"}
+					%li
+						%img{:src=>"images/compromiso/col3.jpg"}
+					%li.last
+						%img{:src=>"images/compromiso/col4.jpg"}
+		#future
+			#content
+			%img{:src=>"images/futuro/tituloNuestroFuturo.png"}
+				
+		#footer
+			#inner
+				#ft
+					#links
+						= render_file('components/menu')
+					#logo
+						%img{:src=>"images/logoFooter.png"}
+					#intel
+						%img{:src=>"images/logoIntelFooter.png"}
+				#copywrite
+					#icons
+						%img{:src=>"images/facebookIcon.png"}
+						%img{:src=>"images/twitterIcon.png"}
+					#tm
+						%p © 2011. BTC Technology Group.

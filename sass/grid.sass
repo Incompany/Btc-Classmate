@@ -29,30 +29,105 @@ body
 	#app
 		+grid(12)
 		margin-top: 20px
+		overflow: hidden
 		ul#appMenu
 			display: block
 			+clearfix
 			li
 				+grid(2)
 				+alpha
-				+omega
-				margin-right: 6px
-		#view
+				+omega				
+				margin-right: 7px
+			li.last
+				margin-right: 0px
+				margin-left: 11px
+		.appView
 			display: block
 			height: 493px
 			#sideBar
 				+grid(3)
+				+alpha
 			#main
 				+grid(9)
+				+omega
 	#about
-		#text
-			+grid(6)
-		#image
-			+grid(6)
-	#info
-	#commitment
-	#future
-	#footer
-	#copywrite
+		margin-top: 10px
+		+grid(12)
+		height: 250px
+		#back
+			+clearfix
+			height: 250px
+			h2
+				display: block
+				+grid(6)
+				margin: 15px
+			p
+				display: block
+				+grid(6)
+				margin: 15px
 
+	ul#info
+		+grid(12)
+
+		margin-top: 10px
+		li
+			+grid(4)
+			height: 631px
+		li.first
+			+alpha
+		li.last
+			+omega
+			
+	#nuestroCompromiso
+		margin-top: 10px
+		+grid(12)
+		ul#compromiso
+			li
+				height: 250px
+				+grid(3)
+			li.first
+				+alpha
+			li.last
+				+omega
+				
+#future
+	+clearfix
+	margin-top: 20px
+	height: 340px
+#footer
+	margin-top: 20px
+	#inner
+		+grid-system(12)
+		+clearfix
+		#ft
+			+grid(12)
+			+alpha
+			+omega
+			#links
+				+grid(8)
+				+alpha
+				ul
+					li
+						+grid-unit-base
+						+alpha
+						+omega
+			#logo
+				+grid(2)
+				+alpha
+			#intel
+				+grid(2)
+				+omega
+	#copywrite
+		+grid(12)
+		#icons
+			+grid(9)
+			+alpha
+			img
+				+grid-unit-base
+		#tm
+			+grid(3)
+			+omega
+			
+			
+ 
  
