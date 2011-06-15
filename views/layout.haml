@@ -10,7 +10,7 @@
 		:javascript
 		
 			function reset(){
-				$('.appView').hide();
+				$('.appView').fadeOut('fast');
 				$('#appMenu > li').removeClass('selected');
 			}
 		
@@ -18,37 +18,37 @@
 				
 				$('#first').click(function(){
 					reset();
-					$('#view1').show();
+					$('#view1').fadeIn('fast');
 					$(this).addClass('selected');
 				});
 				
 				$('#second').click(function(){
 					reset();
-					$('#view2').show();
+					$('#view2').fadeIn('fast');
 					$(this).addClass('selected');
 				});
 				
 					$('#third').click(function(){
 						reset();
-						$('#view3').show();
+						$('#view3').show('fast');
 						$(this).addClass('selected');
 					});
 					
 						$('#fourth').click(function(){
 							reset();
-							$('#view4').show();
+							$('#view4').show('fast');
 							$(this).addClass('selected');
 						});
 						
 							$('#fifth').click(function(){
 								reset();
-								$('#view5').show();
+								$('#view5').show('fast');
 								$(this).addClass('selected');
 							});
 							
 								$('#sixth').click(function(){
 									reset();
-									$('#view6').show();
+									$('#view6').show('fast');
 									$(this).addClass('selected');
 								});
 								

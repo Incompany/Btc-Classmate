@@ -29,7 +29,7 @@ body
 	#app
 		+grid(12)
 		margin-top: 20px
-		overflow: hidden
+		overflow: hidden		
 		ul#appMenu
 			display: block
 			+clearfix
@@ -41,18 +41,20 @@ body
 			li.last
 				margin-right: 0px
 				margin-left: 11px
-		.appView
-			display: block
+		#viewport
 			height: 493px
-			#sideBar
-				+grid(3)
-				width: 240px
-				+alpha
-				+omega
-			#main
-				+grid(9)
-				width: 660px
-				+omega
+			.appView
+				display: block
+				height: 493px
+				#sideBar
+					+grid(3)
+					width: 240px
+					+alpha
+					+omega
+				#main
+					+grid(9)
+					width: 660px
+					+omega
 	#about
 		margin-top: 10px
 		+grid(12)

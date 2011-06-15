@@ -45,10 +45,11 @@
 		#sixth:hover	, #sixth.selected
 			background: url('/images/slider/btn/btn6Hover_slider.png') no-repeat
 
-
-	.appView
+	#viewport
+		overflow: hidden
 		background-color: $white
-		#sideBar
+		.appView
+			#sideBar
 			h2
 				background: url('/images/slider/h2_header.jpg') 
 				padding-top: 4px
@@ -60,7 +61,7 @@
 				margin-right: 0px
 			ul#videos
 				+clearfix
-			
+	
 				display: block
 				clear: both
 				margin: 10px
@@ -68,17 +69,17 @@
 				>li
 					+grid-unit-base
 					+alpha
-					
+			
 					h3
 						font-size: 10px
 					img
-						
+				
 			a.link
 				clear: both
 				display: block
 				color: $darkBlue
 				margin: 10px
-				
+		
 			ul#downloads
 				margin: 10px
 				>li
@@ -94,10 +95,10 @@
 						display: block
 						padding: 4px
 						font-size: 11px
-						
-						
 				
 				
+		
+		
 		#main
 			img
 				margin-top: 10px
