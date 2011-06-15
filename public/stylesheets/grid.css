@@ -237,7 +237,7 @@ ul#info li p {
   background: url("/images/slider/btn/btn3_slider.png") no-repeat;
 }
 /* line 26, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
-#app ul#appMenu #third:hover {
+#app ul#appMenu #third:hover, #app ul#appMenu #third.selected {
   background: url("/images/slider/btn/btn3Hover_slider.png") no-repeat;
 }
 /* line 30, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
@@ -245,7 +245,7 @@ ul#info li p {
   background: url("/images/slider/btn/btn4_slider.png") no-repeat;
 }
 /* line 33, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
-#app ul#appMenu #fourth:hover {
+#app ul#appMenu #fourth:hover, #app ul#appMenu #fourth.selected {
   background: url("/images/slider/btn/btn4Hover_slider.png") no-repeat;
 }
 /* line 36, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
@@ -253,7 +253,7 @@ ul#info li p {
   background: url("/images/slider/btn/btn5_slider.png") no-repeat;
 }
 /* line 39, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
-#app ul#appMenu #fifth:hover {
+#app ul#appMenu #fifth:hover, #app ul#appMenu #fifth.selected {
   background: url("/images/slider/btn/btn5Hover_slider.png") no-repeat;
 }
 /* line 42, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
@@ -261,7 +261,7 @@ ul#info li p {
   background: url("/images/slider/btn/btn6_slider.png") no-repeat;
 }
 /* line 45, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
-#app ul#appMenu #sixth:hover {
+#app ul#appMenu #sixth:hover, #app ul#appMenu #sixth.selected {
   background: url("/images/slider/btn/btn6Hover_slider.png") no-repeat;
 }
 /* line 49, /Users/roberto/Proyectos/Btc/svn/ruby/btc-classmate/sass/_slider.sass */
